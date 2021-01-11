@@ -33,7 +33,9 @@ The functions **ABC_SMC_Algorithm_OLCM_Template_Modelv10_v1_Fates_AbsDistance_L.
   8. **Vulval_Development_Modelv10_v1_AbsDistance_Fates.m** that simulates each mutant (using the function **simulationEulerACablation_Competence_v10_vec.m**) and computes the distance between the simulation and the data for each of the mutants being fitted. 
   9. **Vulval_Development_Modelv10_v1_AbsDistance_EvalKernels.m** evaluates the density function kernel of a perturbed particle to find the weight of the new particle if accepted.
   
+In order to run ABC, one needs to set up the function **Call_Parallel_function_AbsDist_Modelv10_v1_LOCAL.m** (or **Call_Parallel_function_AbsDist_Modelv10_v1.m**) which the settings for the particular step of the algorithm and then run **Parallel_function_AbsDist_Modelv10_v1_LOCAL.m**, which will compute the local covariance matrices for each particle (if the step of the algorithm is bigger than one) with the function **Vulval_Development_Modelv10_v1_CovarianceMatricesOLCM.m** and then will call **ABC_SMC_Algorithm_OLCM_Template_Modelv10_v1_Fates_AbsDistance_L.m** (local version) (or **ABC_SMC_Algorithm_OLCM_Template_Modelv10_v1_Fates_AbsDistance.m** if parallelised). 
 
+The data will be saved in __.mat__ format, one for each parallel job. If one wants to combine all the subfiles from the parallel jobs into one, then use function **SaveData.m**. 
   
 
 
