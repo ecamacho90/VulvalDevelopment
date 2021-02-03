@@ -1,5 +1,10 @@
 # ABC fitting of the binary flip with cusp landscape for vulval development
-Github repository containing the code to simulate and fit the model of vulval development in C. elegans.
+## Elena Camacho-Aguilar, Aryeh Warmflash, David A. Rand
+
+This respository contains the code associated with the following manuscript:
+
+> [Camacho-Aguilar, Elena, Aryeh Warmflash, and David A. Rand. "Quantifying cell transitions in C. elegans with data-fitted landscape models." bioRxiv (2021).](https://www.biorxiv.org/content/10.1101/2021.01.22.426019v1#ref-5)
+
 The repository contains two folders, each corresponding to a version of the model: **Type I (Model_v1)** and **Type II (Model_v2)**. The folders contain code to fit the models to the Training Data by using ABC SMC. All functions in the two folders are equivalent except the functions containing the priors and constraints for the parameters.
 
 Given a model type, we can divide the code into two parts, a group of functions which, given a parameter vector, simulate the model and gives the percentage of times that each cell took each fate, and a group of functions which run ABC SMC. In the following, we will explain each group.
