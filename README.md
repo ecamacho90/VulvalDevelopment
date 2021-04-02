@@ -42,7 +42,8 @@ In order to run ABC, one needs to set up the function **Call_Parallel_function_A
 
 The data will be saved in __.mat__ format, one for each parallel job. If one wants to combine all the subfiles from the parallel jobs into one, then use function **SaveData.m**. 
   
-
+## Run time
+It took a mean of 3.5 seconds to simulate all the mutants given one particle that satisfies all the constraints and priors. The time to run the ABC algorithm depended on the step of the algorithm and number of particles to be found. For N=20,000 particles, the time increased as the algorithm is challenged with smaller thresholds, ranging from a mean of 3.5 seconds/particle on the first step of the algorithm to a mean of 56.15 seconds/particle on the last step of the algorithm. This means, to compute 20,000 particles with 4 cores it ranged from 4.8 hours on the first step to 78 hours on the last one.
 
 
 
