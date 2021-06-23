@@ -3,7 +3,8 @@
 
 This respository contains the code associated with the following manuscript:
 
-> [Camacho-Aguilar E, Warmflash A, Rand DA. "Quantifying cell transitions in C. elegans with data-fitted landscape models." bioRxiv (2021).](https://www.biorxiv.org/content/10.1101/2021.01.22.426019v1#ref-5)
+> [Camacho-Aguilar E, Warmflash A, Rand DA (2021) Quantifying cell transitions in C. elegans with data-fitted landscape models. PLoS Comput
+Biol 17(6): e1009034.](https://doi.org/10.1371/journal.pcbi.1009034)
 
 The repository contains two folders, each corresponding to a version of the model: **Type I (Model_v1)** and **Type II (Model_v2)**. The folders contain code to fit the models to the Training Data by using ABC SMC. All functions in the two folders are equivalent except the functions containing the priors and constraints for the parameters.
 
